@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		94CA472C1E789D15005607FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CA472B1E789D15005607FE /* main.m */; };
+		94CA47351E789DA0005607FE /* hid.c in Sources */ = {isa = PBXBuildFile; fileRef = 94CA47331E789DA0005607FE /* hid.c */; };
+		94CA473B1E78A11C005607FE /* HIDController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CA473A1E78A11C005607FE /* HIDController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,13 @@
 /* Begin PBXFileReference section */
 		94CA47281E789D15005607FE /* FastlaneButton */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FastlaneButton; sourceTree = BUILT_PRODUCTS_DIR; };
 		94CA472B1E789D15005607FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		94CA47331E789DA0005607FE /* hid.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hid.c; sourceTree = "<group>"; };
+		94CA47341E789DA0005607FE /* hid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hid.h; sourceTree = "<group>"; };
+		94CA47371E789E9F005607FE /* install.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
+		94CA47381E789E9F005607FE /* remove.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = remove.sh; sourceTree = "<group>"; };
+		94CA47391E78A11C005607FE /* HIDController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIDController.h; sourceTree = "<group>"; };
+		94CA473A1E78A11C005607FE /* HIDController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HIDController.m; sourceTree = "<group>"; };
+		94CA473C1E78AA9F005607FE /* com.heinen.farlei.service.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = com.heinen.farlei.service.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				94CA472A1E789D15005607FE /* FastlaneButton */,
+				94CA47361E789E6D005607FE /* Deploy */,
 				94CA47291E789D15005607FE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,8 +68,30 @@
 			isa = PBXGroup;
 			children = (
 				94CA472B1E789D15005607FE /* main.m */,
+				94CA47391E78A11C005607FE /* HIDController.h */,
+				94CA473A1E78A11C005607FE /* HIDController.m */,
+				94CA47321E789D45005607FE /* USB */,
 			);
 			path = FastlaneButton;
+			sourceTree = "<group>";
+		};
+		94CA47321E789D45005607FE /* USB */ = {
+			isa = PBXGroup;
+			children = (
+				94CA47331E789DA0005607FE /* hid.c */,
+				94CA47341E789DA0005607FE /* hid.h */,
+			);
+			name = USB;
+			sourceTree = "<group>";
+		};
+		94CA47361E789E6D005607FE /* Deploy */ = {
+			isa = PBXGroup;
+			children = (
+				94CA473C1E78AA9F005607FE /* com.heinen.farlei.service.plist */,
+				94CA47371E789E9F005607FE /* install.sh */,
+				94CA47381E789E9F005607FE /* remove.sh */,
+			);
+			name = Deploy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94CA473B1E78A11C005607FE /* HIDController.m in Sources */,
 				94CA472C1E789D15005607FE /* main.m in Sources */,
+				94CA47351E789DA0005607FE /* hid.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,11 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "HIDController.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        
+        HIDController *hidController = [HIDController new];
+        [hidController start];
+        
     }
     return 0;
 }
