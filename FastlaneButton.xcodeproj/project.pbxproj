@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9469380C1E7F6EA30057A461 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 9469380B1E7F6EA30057A461 /* Config.m */; };
+		9469380F1E7F74A20057A461 /* Command.m in Sources */ = {isa = PBXBuildFile; fileRef = 9469380E1E7F74A20057A461 /* Command.m */; };
 		94CA472C1E789D15005607FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CA472B1E789D15005607FE /* main.m */; };
 		94CA47351E789DA0005607FE /* hid.c in Sources */ = {isa = PBXBuildFile; fileRef = 94CA47331E789DA0005607FE /* hid.c */; };
 		94CA473B1E78A11C005607FE /* HIDController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CA473A1E78A11C005607FE /* HIDController.m */; };
@@ -25,6 +27,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9469380A1E7F6EA30057A461 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		9469380B1E7F6EA30057A461 /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
+		9469380D1E7F74A20057A461 /* Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
+		9469380E1E7F74A20057A461 /* Command.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Command.m; sourceTree = "<group>"; };
 		94CA47281E789D15005607FE /* FastlaneButton */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FastlaneButton; sourceTree = BUILT_PRODUCTS_DIR; };
 		94CA472B1E789D15005607FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		94CA47331E789DA0005607FE /* hid.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hid.c; sourceTree = "<group>"; };
@@ -47,6 +53,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		946938091E7F6E5C0057A461 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9469380A1E7F6EA30057A461 /* Config.h */,
+				9469380B1E7F6EA30057A461 /* Config.m */,
+				9469380D1E7F74A20057A461 /* Command.h */,
+				9469380E1E7F74A20057A461 /* Command.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		94CA471F1E789D15005607FE = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +84,7 @@
 		94CA472A1E789D15005607FE /* FastlaneButton */ = {
 			isa = PBXGroup;
 			children = (
+				946938091E7F6E5C0057A461 /* Model */,
 				94CA472B1E789D15005607FE /* main.m */,
 				94CA47391E78A11C005607FE /* HIDController.h */,
 				94CA473A1E78A11C005607FE /* HIDController.m */,
@@ -152,8 +170,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				94CA473B1E78A11C005607FE /* HIDController.m in Sources */,
+				9469380C1E7F6EA30057A461 /* Config.m in Sources */,
 				94CA472C1E789D15005607FE /* main.m in Sources */,
 				94CA47351E789DA0005607FE /* hid.c in Sources */,
+				9469380F1E7F74A20057A461 /* Command.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +300,7 @@
 				94CA47311E789D15005607FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

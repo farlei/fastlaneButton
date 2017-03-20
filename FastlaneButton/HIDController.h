@@ -7,8 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Config.h"
 
 @interface HIDController : NSObject
+
+@property(nonatomic, strong) Config *config;
+@property(nonatomic) int activeCommandIndex;
 
 - (void) start;
 
